@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+
+form {
+    border: 3px solid #8B008B;
+    width: 20%; 
+    text-align: center;
+}
+p { 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: aqua;
+}
+
+input[type=text], input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+  }

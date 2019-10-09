@@ -3,12 +3,12 @@ function makeNav($conn, $loggedIn){
     // This creates the navigation from the navigation table
     $sql = "SELECT pagename, pagetitle FROM test.navigation";
     $result = $conn->query($sql);
-    echo "<ul>";
+    echo "<ul style=background-color:gray;>";
     while ( $row = $result->fetch_assoc() ) {
-      echo "<li><a href='" . $row['pagename'] . "'>" .$row['pagetitle']. "</a></li>";
+      echo "<li style=display:inline;><a style=margin-left:10px; href='" . $row['pagename'] . "'>" .$row['pagetitle']. "</a></li>";
     }
     if ($loggedIn == "not logged in"){
-      echo "<li><a href='login.php'>Log In</a></li>";
+      echo "<li style=display:inline;><a style=margin-left:10px; href='login.php'>Log In</a></li>";
     } else {
       echo "<li><a href='logout.php'>Log Out</a></li>";
       echo "<p>Howdy " . $_SESSION["realname"] . "</p>";
