@@ -47,3 +47,7 @@
          echo '<p>' . $key . ': ' . $item . '</p>';
         }
  }
+
+
+
+ git clone https://github.com/MilesS/WPVagrant.git wp-playground && rm -rf wp-playground/.git
